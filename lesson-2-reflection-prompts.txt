@@ -19,13 +19,36 @@ them, this will allow you to remove or add certain files to be committed.
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+You can choose which files to add to the commit. By doing this, you have control
+over which files are getting added to each commit.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+Branches are helpful whenever you want to make a change but want to keep the 
+core functionality the same on the master branch or your deployed project. 
+Branches allow you to "branch" off of the current branch you are working on
+and make the changes to that branch specifically, any changes made to the new
+branch will not be in the main branch until merged, which will help keep your
+repository clean.
+
 How do the diagrams help you visualize the branch structure?
+
+The diagram will help show when branches were created as well as which parent
+branch they were created from.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+The two branches are combined into one branch. It is represented in the diagram
+as becoming one, because the code for both branches are merged into a single 
+branch, retaining any changes that were in both branches.
+
+
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+Pros: Automatic merging is really quick
+Cons: Some code may need to be checked to ensure which changes should be added,
+by doing a manual merge you can determine exactly which lines of code you want
+to be merged in.
